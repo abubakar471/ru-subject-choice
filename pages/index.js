@@ -74,7 +74,7 @@ const Home = () => {
   }
 
   const handleSubmit = async () => {
-    const { data } = await axios.post('/api/submit');
+    const { data } = await axios.post('https://ru-subject-choce.netlify.app/api/submit');
 
     if (data.ok) {
       setOk(true);
@@ -84,7 +84,7 @@ const Home = () => {
   }
 
   const fetchRes = async () => {
-    const { data } = await axios.get('/api/submit');
+    const { data } = await axios.get('https://ru-subject-choce.netlify.app/api/submit');
     if(data.ok){
       setOk(data.ok);
     }
