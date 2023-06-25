@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  /* width: 80%;
+  margin : auto; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.sidebar{
+  width: 320px;
+  padding: 20px;
+  min-height: 100vh;
+  max-height: fit-content;
+  background: rgb(25, 203, 248);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.user-info{
+  display : flex;
+  width: 50%;
+  /* margin: 50px auto; */
+  margin-right: 50px;
+  justify-content: space-between !important;
+}
+
+
+
+.user-img{
+  height: 200px;
+  object-fit: contain;
+  margin-right: 250px;
+}
+
+.table{
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid black;
+}
+
+table tr{
+  margin-right: 20px;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+.sub-choice-title{
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.subject-choice-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-1,.box-2{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 10px;
+  height: 420px;
+  width: 300px;
+}
+
+.arrow{
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(248, 51, 25);
+}
+
+
+.btn-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.reset{
+  background: rgb(201, 37, 37);
+  color: white;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.submit{
+  background: rgb(37, 113, 201);
+  color: white;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.choice-done{
+  background: rgb(27, 196, 103);
+  color: black;
+  border-radius: 15px;
+  padding: 10px;
+  width: 200px;
+}
+
+
+@media (max-width : 1000px){
+  .sidebar{
+    display : none;
+  }
+
+  .user-info{
+    width: 80%;
+    margin: auto;
+  }
+
+  .sub-choice-title{
+    width: 80%;
+    margin: auto;
+  }
+
+  .subject-choice-box{
+    width: 80%;
+    margin: auto;
+  }
+
+  .choice-done{
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .box-1,.box-2{
+    height: auto;
+  }
+}
