@@ -89,9 +89,9 @@ const Home = () => {
       setOk(data.ok);
     }
   }
-  useEffect(() => {
-    fetchRes();
-  }, [])
+  // useEffect(() => {
+  //   fetchRes();
+  // }, [])
 
   return (
     <>
@@ -143,7 +143,24 @@ const Home = () => {
 
             </div>
 
-            <section>
+              <section style={{display : "flex", justifyContent : "center"}}>
+                <table className="table" border="2px">
+                  <tr>
+                    <td>applicant id</td>
+                    <td>applicant roll</td>
+                    <td>position</td>
+                    <td>status</td>
+                  </tr>
+                  <tr>
+                    <td>C-85548</td>
+                    <td>88525</td>
+                    <td>6992</td>
+                    <td>waiting</td>
+                  </tr>
+                </table>
+              </section>
+
+            {/* <section>
               <h1 className="sub-choice-title">Subject Choice Order</h1>
 
               {
@@ -180,7 +197,7 @@ const Home = () => {
                   </>
                 )
               }
-            </section>
+            </section> */}
           </div>
         </div>
 
