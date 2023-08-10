@@ -154,7 +154,7 @@ const Home = () => {
                   <tr>
                     <td>C-85548</td>
                     <td>88525</td>
-                    <td>6992</td>
+                    <td>6976</td>
                     <td>waiting</td>
                   </tr>
                 </table>
